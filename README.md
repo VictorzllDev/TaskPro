@@ -58,3 +58,38 @@ A API TaskPro oferece operações básicas para gerenciar suas tarefas. Os recur
   "id": 1
 }
 ```
+
+## Como testar a API no localhost
+
+### 1. Clonar o repositório
+
+```bash
+git clone https://github.com/victorzllDev/TaskPro.git
+```
+
+### 2. Instalar as dependências
+
+#### Recomendamos o uso do virtualenv para isolar o ambiente.
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Configurar as variáveis do banco de dados
+
+#### Crie um arquivo .env na raiz do projeto e configure as variáveis do banco de dados necessárias.
+
+```env
+DB_HOST='host.exemplo.com'
+DB_USER='admin'
+DB_PASSWORD='admin'
+DB_DATABASE='taskpro'
+```
+
+### 4. Executar a aplicação
+
+#### Inicie a aplicação executando o seguinte comando
+
+```bash
+python main.py
+```
