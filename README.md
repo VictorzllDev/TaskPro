@@ -93,3 +93,20 @@ DB_DATABASE='taskpro'
 ```bash
 python main.py
 ```
+
+# Estrutura da Tabela MySQL
+
+A seguir está a estrutura da tabela no MySQL, juntamente com uma descrição de cada coluna.
+
+### Tabela MySQL
+
+```sql
+CREATE TABLE tasks (
+    id INT NOT NULL AUTO_INCREMENT,
+    title_task VARCHAR(20) NOT NULL,
+    description TEXT NOT NULL,
+    completion_task BOOLEAN DEFAULT FALSE,
+    PRIMARY KEY(id)
+);
+
+```
